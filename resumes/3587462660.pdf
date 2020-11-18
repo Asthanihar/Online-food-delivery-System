@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Personal Details Form</title>
+<style>
+fieldset {
+  background-color: #F5DEB3;
+	color:
+}
+input{
+	background-color: #D2B48C;
+	border:none;
+}
+
+body{
+	color:#2F4F4F;
+}
+
+legend {
+  background-color: #D2B48C;
+  color: white;
+  padding: 5px 10px;
+}
+#id1
+{
+	border:solid;
+}
+.required
+{
+    color: red;
+}
+</style>
+</head>
+<body>
+<form action="ISAA.php" method="post">
+<fieldset>
+  <legend>Personal Details:</legend>
+<table>
+<tr>
+<td><label>Name: <span class="required">*</span></td><td><input type="text" size="30"/></td></label></tr>
+<tr>
+<td><label> Date of Birth:<span class="required">*</span> </td><td><input type="date" name="dob"/></td></label></tr>
+<tr><td><label>Marital Status:<span class="required">*</span></label></td>
+<td><label>Married</label><input type="radio" id="married" name="status">
+<label>Single</label><input type="radio" id="single" name="status">
+<label>Divorced</label><input type="radio" id="divorced" name="status">
+<label>Widowed</label><input type="radio" id="widowed" name="status"></td></tr>
+<tr><td><label>Phone:<span class="required">*</span></td><td><input type="tel" id="phone" name="phone" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></td></label></tr>
+<tr><td><label>e-mail id:</td><td><input type="email" name="email"/></td></label></tr>
+<tr><td><label>Address:</td><td><input type="text"size="50"/></td></label></tr>
+<tr><td><label>Credit Card Number:<span class="required">*</span></td><td><input type="tel" maxlength="16" pattern="\d*" name="ccno" placeholder="Card Number"></td></label></tr>
+<tr><td><label>PAN Number:<span class="required">*</span></td><td><input type="tel" maxlength="10" pattern="\d*" name="pan" placeholder="PAN Number"></td></label></tr>
+<tr><td><label>Aadhar Number:<span class="required">*</span></label></td><td><input type="tel" maxlength="12" pattern="\d*" name="aadhar" placeholder="Aadhar Number"></td></tr>
+<tr><td><label>Driver's License:<span class="required">*</span></label></td><td><input type="tel" maxlength="6" pattern="\d*" name="dl" placeholder="Driver's License"></td></tr>
+<tr><br><Br><td><input type="submit" id="id1"></td></tr>
+</table>
+</fieldset>
+</form>
+</body>
+</html>
